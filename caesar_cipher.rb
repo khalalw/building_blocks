@@ -15,7 +15,7 @@ def caesar_cipher(str, shift)
   # convert number back to string
 
   shifted_words = []
-  shifted_arr = []
+  shifted_chars = []
 
   word_arr = str.split(' ')
   word_arr.each do |word|
@@ -25,10 +25,10 @@ def caesar_cipher(str, shift)
                     else
                       (num + shift)
                     end
-      shifted_arr.push(shifted_num.chr)
+      shifted_chars.push(shifted_num.chr)
     end
-    shifted_words.push(shifted_arr.join(''))
-    shifted_arr = []
+    shifted_words.push(shifted_chars.join(''))
+    shifted_chars = []
   end
   shifted_words.join(' ')
 end
