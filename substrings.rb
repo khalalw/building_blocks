@@ -21,3 +21,4 @@ end
 
 dictionary = %w[below down go going horn how howdy it i low own part partner sit]
 substrings('below', dictionary)
+# returns { "below" => 1, "low" => 1 }
